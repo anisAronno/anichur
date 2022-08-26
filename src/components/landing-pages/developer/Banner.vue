@@ -7,7 +7,7 @@
                     <div class="row h-100 justify-content-center align-items-center">
                         <div class="col-lg-5">
                             <div class="hero-content">
-                                <h1>Built for Developers</h1>
+                                <h1>Hi, I am Anichur Rahaman</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                                 
                                 <a href="#" class="btn btn-primary">Get Started</a>
