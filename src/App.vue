@@ -1,56 +1,26 @@
 <template>
-  <div>
-    <HeaderTwo v-if="currentUrl == '/web-hosting'"></HeaderTwo>
-    <HeaderThree v-else-if="currentUrl == '/machine-learning'"></HeaderThree>
-    <HeaderFour v-else-if="currentUrl == '/digital-agency'"></HeaderFour>
-    <div v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
-    <Header v-else></Header>
-    <PreLoader v-if="isLoading" />
-    <router-view></router-view>
-    <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
-    <Footer v-else></Footer>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import Header from './components/layout/Header';
-import HeaderTwo from './components/layout/HeaderTwo';
-import HeaderThree from './components/layout/HeaderThree';
-import HeaderFour from './components/layout/HeaderFour';
-import Footer from './components/layout/Footer';
-import PreLoader from './components/layout/PreLoader';
+import HelloWorld from './components/HelloWorld.vue'
+
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    Header, HeaderTwo, HeaderThree, HeaderFour, Footer,PreLoader
-  },
-
-  data() {
-    return {
-      isLoading: true,
-      currentUrl: ''
-    }
-  },
-
-  watch: {
-    '$route'(pathUrl){
-      this.currentUrl = pathUrl.path;
-      this.isLoading = true;
-      setTimeout(() => { this.isLoading = false }, 1500);
-    }
-  },
-
-  mounted() {
-    this.currentUrl = window.location.pathname;
-    setTimeout(() => {
-      this.isLoading = false
-    }, 2000);
+    HelloWorld
   }
 }
 </script>
+
 <style>
-*{
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 18px;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
