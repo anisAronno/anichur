@@ -10,7 +10,7 @@
                                 <h1>Hi, I am Anichur Rahaman</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                                 
-                                <a href="#" class="btn btn-primary">Contact</a>
+                                <a href="#" class="btn btn-primary">Contact us</a>
                             </div>
                         </div>
 
