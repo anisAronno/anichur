@@ -8,4 +8,5 @@ git add -A
 git commit -m 'deploy'
 git checkout master
 git push origin master 
+git subtree push --prefix dist origin master
 cd -
