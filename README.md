@@ -1,4 +1,4 @@
-# anichur
+# pasona
 
 ## Project setup
 ```
