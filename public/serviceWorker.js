@@ -1,4 +1,4 @@
-const cacheName = 'snmleathers-v1';
+const cacheName = 'anichur-v1';
 const staticAssets = [
   './',
   './index.html',
