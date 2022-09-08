@@ -2,7 +2,7 @@
 # abort on errors
 set -e
 # build
-# yarn build
+yarn build
 # navigate into the build output directory
 cd . 
 
